@@ -27,7 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 <!--===============================================================================================-->
 </head>
-<body onload='document.form1.text1.focus()'>
+<body>
 	
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('bg-01.jpg');">
@@ -48,7 +48,21 @@
 						<input class="input100" type="password" name="pass" placeholder="Type your password">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
-					<script src="email-validation.js"></script>
+					<script>
+						function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+
+        return true;
+
+			   		</script>
+					<input type="text" onblur="validateEmail(this);" />
+					
 					<div class="text-right p-t-8 p-b-31">
 						<a href="#">
 							Forgot password?
