@@ -5,22 +5,22 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
+font-face {
   font-family: Poppins-Regular;
   src: url('../fonts/poppins/Poppins-Regular.ttf'); 
 }
 
-@font-face {
+font-face {
   font-family: Poppins-Medium;
   src: url('../fonts/poppins/Poppins-Medium.ttf'); 
 }
 
-@font-face {
+font-face {
   font-family: Poppins-Bold;
   src: url('../fonts/poppins/Poppins-Bold.ttf'); 
 }
 
-@font-face {
+font-face {
   font-family: Poppins-SemiBold;
   src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
 }
@@ -56,7 +56,7 @@ a {
 }
 
 a:focus {
-	outline: none !important;
+	outline: none ;
 }
 
 a:hover {
@@ -95,7 +95,7 @@ textarea {
 }
 
 textarea:focus, input:focus {
-  border-color: transparent !important;
+  border-color: transparent ;
 }
 
 input:focus::-webkit-input-placeholder { color:transparent; }
@@ -120,7 +120,7 @@ textarea:-ms-input-placeholder { color: #adadad;}
 
 /*---------------------------------------------*/
 button {
-	outline: none !important;
+	outline: none;
 	border: none;
 	background: transparent;
 }
@@ -130,7 +130,7 @@ button:hover {
 }
 
 iframe {
-	border: none !important;
+	border: none ;
 }
 
 /*//////////////////////////////////////////////////////////////////
